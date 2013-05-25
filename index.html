@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+<title>Journey</title>
+<script>
+
+// panoId，pov 和 zoom 可以直接在 soso 街景地图的 url 里找到
+var nanjing = function() {
+
+    var pano = new soso.maps.Panorama(document.getElementById('nanjing'), {
+        pano: '10101760121127125547700',  // 南京
+        pov:{
+                heading: 120,  
+                pitch: -10    
+            },
+        zoom: 1
+    });
+
+}
+var beijing_old = function() {
+
+    var pano = new soso.maps.Panorama(document.getElementById('beijing_old'), {
+        pano: '10011505120504103753600',  // 老北京
+        pov:{
+                heading: 140,  
+                pitch: -60    
+            },
+        zoom: 1
+    });
+
+}
+var jinan = function() {
+
+    var pano = new soso.maps.Panorama(document.getElementById('jinan'), {
+        pano: '22017Q00000000000980001',  // 济南
+        pov:{
+                heading: 230,  
+                pitch: 10    
+            },
+        zoom: 1
+    });
+
+}
+var wuhan_old = function() {
+
+    var pano = new soso.maps.Panorama(document.getElementById('wuhan_old'), {
+        pano: '10141019121230115133000',  // 武汉
+        pov:{
+                heading: 320,  
+                pitch: 0   
+            },
+        zoom: 1
+    });
+
+}
+var beijing = function() {
+
+    var pano = new soso.maps.Panorama(document.getElementById('beijing'), {
+        pano: '10012450121203210848200',  // 北京
+        pov:{
+                heading: 200,  
+                pitch: -15  
+            },
+        zoom: 1
+    });
+
+}
+var shanghai = function() {
+
+    var pano = new soso.maps.Panorama(document.getElementById('shanghai'), {
+        pano: '10023560121114183026100',  // 上海
+        pov:{
+                heading: 330,  
+                pitch: 20   
+            },
+        zoom: 1
+    });
+
+}
+var shenzhen = function() {
+
+    var pano = new soso.maps.Panorama(document.getElementById('shenzhen'), {
+        pano: '10041004110909132550187',  // 深圳
+        pov:{
+                heading: 80,  
+                pitch: -30   
+            },
+        zoom: 1
+    });
+
+}
+var guangzhou = function() {
+
+    var pano = new soso.maps.Panorama(document.getElementById('guangzhou'), {
+        pano: '10061004120616135711800',  // 广州
+        pov:{
+                heading: 135,  
+                pitch: -6   
+            },
+        zoom: 1
+    });
+
+}
+var wuhan = function() {
+
+    var pano = new soso.maps.Panorama(document.getElementById('wuhan'), {
+        pano: '10143700130223112633700',  // 武汉
+        pov:{
+                heading: 5,  
+                pitch: -40   
+            },
+        zoom: 1
+    });
+
+}
+var init = function() {
+
+    jinan();
+    beijing_old();
+    nanjing();
+    wuhan_old();
+    beijing();
+    guangzhou();
+    shenzhen();
+    shanghai();
+    wuhan();
+
+}
+
+
+</script>
+</head>
+
+<body onLoad="init()">
+    <div id="myCarousel" class="carousel slide" data-interval="0">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div style="width:1300px;height:600px" id="jinan"></div>
+          <div class="container">
+            <div class="carousel-caption" style="z-index:10;right:66px">
+              <p class="">那一年，你一个人，背着书包去了济南。大明湖畔，执子之手，风轻云淡。</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div style="width:1300px;height:600px" id="beijing_old"></div>
+          <div class="container">
+            <div class="carousel-caption" style="z-index:10;right:66px">
+              <p class="">在北京，仰望天空，仰望星空。</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div style="width:1300px;height:600px" id="nanjing"></div>
+          <div class="container">
+            <div class="carousel-caption" style="z-index:10;right:66px">
+              <p class="">最忘不了，那让人流连醉的赤豆元宵，来自莲湖糕团店。</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div style="width:1300px;height:600px" id="wuhan_old"></div>
+          <div class="container">
+            <div class="carousel-caption" style="z-index:10;right:66px">
+              <p class="">一起自习的日子，我们知道，彼此并不孤单。</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div style="width:1300px;height:600px" id="beijing"></div>
+          <div class="container">
+            <div class="carousel-caption" style="z-index:10;right:66px">
+              <p class="">毕业了，哪里是下一站？也许会回到北京，沉浸于政治和文化的巨大震撼。</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div style="width:1300px;height:600px" id="guangzhou"></div>
+          <div class="container">
+            <div class="carousel-caption" style="z-index:10;right:66px">
+              <p class="">也许会南下广州抑或杭州，必另有风情一番。</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div style="width:1300px;height:600px" id="shenzhen"></div>
+          <div class="container">
+            <div class="carousel-caption" style="z-index:10;right:66px">
+              <p class="">也许会在深圳相见，鹊桥对岸，有一个人在香港带着同样的思念。</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div style="width:1300px;height:600px" id="shanghai"></div>
+          <div class="container">
+            <div class="carousel-caption" style="z-index:10;right:66px">
+              <p class="">人终究是璀璨星空中的一个点，平凡如你我，亦永勿忘登攀。</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div style="width:1300px;height:600px" id="wuhan"></div>
+          <div class="container">
+            <div class="carousel-caption" style="z-index:10;right:66px">
+              <p class="">无论哪里，是下一站，有一件事始终不变。正如武大樱花这般繁花似锦，人生如此精彩，人在旅途，两人携手，勇闯天涯，好不痛快。生日快乐，亲爱的❤</p>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+    <a class="right carousel-control" style="top:80%;background:rgb(188, 143, 202)" href="#myCarousel" data-slide="next">›</a>
+    <div class="navbar navbar-fixed-bottom ">
+      <div class="navbar-inner" style="background-image:linear-gradient(to bottom,#fff,rgb(245, 226, 244))">
+        <a class="brand" href="#" style="font-family:'Parisienne',cursive;font-size:25px;padding-left:30px">Journey</a>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://map.soso.com/api/v2/main.js?key=a90a81397f2d27fef92a6ea373dbaa2f"></script>   
+
+</body>
+
+</html>
